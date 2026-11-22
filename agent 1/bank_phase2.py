@@ -99,6 +99,50 @@ TRACKS = {
             "val-red", "val-blue", "val-patch", "val-code", "val-multiturn", "val-agentic", "val-boundary",
         },
     },
+    "purple": {
+        "file": "purple_arch_train.jsonl",
+        "prefix": "leet-purple",
+        "hat": "purple",
+        "split": "train",
+        "require_fence": True,
+        "families": {
+            "purple-api", "purple-auth", "purple-cloud", "purple-containers", "purple-cicd",
+            "purple-data", "purple-network", "purple-crypto", "purple-saas", "purple-ai-infra",
+        },
+    },
+    "dfir_code": {
+        "file": "log_forensics_code_train.jsonl",
+        "prefix": "leet-dfir",
+        "hat": "blue",
+        "split": "train",
+        "require_fence": True,
+        "families": {
+            "py-log-parser", "sql-hunt-query", "jq-audit-pipe", "awk-net-triage", "binary-header-parser",
+            "timeline-correlator", "dns-entropy-script", "cloudtrail-analyzer", "container-audit-script", "auth-anomaly-agg",
+        },
+    },
+    "pr_review": {
+        "file": "code_review_pr_train.jsonl",
+        "prefix": "leet-pr",
+        "hat": "review",
+        "split": "train",
+        "require_fence": False,
+        "families": {
+            "pr-auth-flaw", "pr-race-condition", "pr-resource-leak", "pr-sql-perf", "pr-type-edgecase",
+            "pr-config-drift", "pr-error-swallow", "pr-clean-approve", "pr-api-compat", "pr-crypto-misuse",
+        },
+    },
+    "sec_tests": {
+        "file": "test_generation_train.jsonl",
+        "prefix": "leet-test",
+        "hat": "code",
+        "split": "train",
+        "require_fence": True,
+        "families": {
+            "pytest-boundary", "go-table-test", "rust-unit-prop", "ts-vitest-suite", "sql-invariant-test",
+            "concurrency-stress-test", "parser-roundtrip-test", "auth-rbac-test", "idempotency-test", "timeout-retry-test",
+        },
+    },
 }
 
 FENCE_RE = re.compile(r"```([a-zA-Z0-9_+-]*)\n(.*?)```", re.S)

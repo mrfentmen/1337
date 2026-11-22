@@ -1,0 +1,100 @@
+{
+  "agent": "agent 1 (phase 2)",
+  "generator": "gemini-4-carbon",
+  "phase1_rows": 4000,
+  "phase2_rows": 660,
+  "agent1_grand_total": 4660,
+  "batches_done": 73,
+  "dropped_rows": 9,
+  "tracks": {
+    "secure_patch": {
+      "file": "secure_patch_train.jsonl",
+      "rows": 200,
+      "families": {
+        "auth-crypto-patch": 20,
+        "concurrency-patch": 20,
+        "cpp-patch": 20,
+        "docker-k8s-patch": 20,
+        "go-patch": 20,
+        "iac-nginx-patch": 20,
+        "py-patch": 20,
+        "rust-patch": 20,
+        "sql-patch": 20,
+        "ts-patch": 20
+      }
+    },
+    "systems_code": {
+      "file": "systems_code_train.jsonl",
+      "rows": 140,
+      "families": {
+        "async-systems": 14,
+        "build-ci": 14,
+        "cli-tools": 14,
+        "compiler-types": 14,
+        "data-structures": 14,
+        "db-queries": 14,
+        "networking-io": 14,
+        "parsers-protocols": 14,
+        "perf-tuning": 14,
+        "testing-harnesses": 14
+      }
+    },
+    "multiturn": {
+      "file": "multiturn_train.jsonl",
+      "rows": 100,
+      "families": {
+        "mt-api-design": 10,
+        "mt-arch-hardening": 10,
+        "mt-code-debug": 10,
+        "mt-config-rollout": 10,
+        "mt-ctf-concept": 10,
+        "mt-ir-containment": 10,
+        "mt-log-followup": 10,
+        "mt-patch-refine": 10,
+        "mt-perf-rootcause": 10,
+        "mt-test-fix": 10
+      }
+    },
+    "agentic": {
+      "file": "agentic_structured_train.jsonl",
+      "rows": 100,
+      "families": {
+        "cli-pipeline-json": 20,
+        "diff-patch-gen": 20,
+        "json-schema-out": 20,
+        "tool-call-plan": 20,
+        "tool-result-triage": 20
+      }
+    },
+    "persona_boundary": {
+      "file": "persona_boundary_train.jsonl",
+      "rows": 0,
+      "families": {}
+    },
+    "dpo": {
+      "file": "dpo_code_hygiene.jsonl",
+      "rows": 60,
+      "families": {
+        "reject-broken-json": 12,
+        "reject-fluff-lecture": 12,
+        "reject-leet-in-code": 24,
+        "reject-stock-english": 12
+      }
+    },
+    "val": {
+      "file": "val.jsonl",
+      "rows": 60,
+      "families": {
+        "val-agentic": 6,
+        "val-blue": 12,
+        "val-boundary": 6,
+        "val-code": 6,
+        "val-multiturn": 6,
+        "val-patch": 12,
+        "val-red": 12
+      }
+    }
+  },
+  "last_drop_reasons": [],
+  "updated_at": "2026-11-22T11:42:49.377908+00:00"
+}

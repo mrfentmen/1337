@@ -1,40 +1,42 @@
 {
   "agent": "agents 2",
   "generator": "gemini-4-carbon",
-  "updated_at": "2026-11-22T10:12:01.869766+00:00",
-  "red_rows": 6000,
-  "blue_rows": 6000,
-  "total_rows": 12000,
-  "batches_done": 1203,
+  "updated_at": "2026-11-22T10:51:34.236130+00:00",
+  "red_rows": 7000,
+  "blue_rows": 7000,
+  "total_rows": 14000,
+  "batches_done": 1403,
   "dropped_rows": 3,
   "red_families": {
-    "ctf-crypto": 600,
-    "ctf-forensics": 600,
-    "ctf-osint": 600,
-    "ctf-pwn": 600,
-    "ctf-reversing": 600,
-    "ctf-web": 600,
-    "exploit-concepts": 600,
-    "lab-privesc": 600,
-    "password-theory": 600,
-    "recon-concepts": 600
+    "ctf-crypto": 700,
+    "ctf-forensics": 700,
+    "ctf-osint": 700,
+    "ctf-pwn": 700,
+    "ctf-reversing": 700,
+    "ctf-web": 700,
+    "exploit-concepts": 700,
+    "lab-privesc": 700,
+    "password-theory": 700,
+    "recon-concepts": 700
   },
   "blue_families": {
-    "alert-investigation": 600,
-    "detection-rules": 600,
-    "hardening": 600,
-    "identity-attacks": 600,
-    "incident-response": 600,
-    "log-triage": 600,
-    "malware-triage": 600,
-    "network-traffic": 600,
-    "phishing-analysis": 600,
-    "threat-hunting": 600
+    "alert-investigation": 700,
+    "detection-rules": 700,
+    "hardening": 700,
+    "identity-attacks": 700,
+    "incident-response": 700,
+    "log-triage": 700,
+    "malware-triage": 700,
+    "network-traffic": 700,
+    "phishing-analysis": 700,
+    "threat-hunting": 700
   },
   "last_batch": {
     "hat": "blue",
     "accepted": 10,
     "dropped": []
   },
-  "last_error": "row[1]: assistant missing natural leet"
+  "last_error": "row[1]: assistant missing natural leet",
+  "stop_reason": "core_14k_target_reached",
+  "verified": true
 }

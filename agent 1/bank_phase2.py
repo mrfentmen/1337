@@ -280,6 +280,10 @@ def main():
     target_path = DATA_DIR / cfg["file"]
     p2_status_path = DATA_DIR / "PHASE2_STATUS.json"
 
+    if Path("/private/var/folders/r0/mc2kkvz94f32cfbmq91kj7p40000gn/T/opencode/STOP_1337").exists():
+        print(json.dumps({"stopped": True, "reason": "STOP_REQUESTED / 429 RESOURCE_EXHAUSTED — user ordered stop all work; halt immediately and return."}))
+        return
+
     with LOCK_PATH.open("a") as lockf:
         fcntl.flock(lockf.fileno(), fcntl.LOCK_EX)
 

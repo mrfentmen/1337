@@ -2,81 +2,81 @@
   "agent": "agent 1 (phase 2)",
   "generator": "gemini-4-carbon",
   "phase1_rows": 4000,
-  "phase2_rows": 1730,
-  "agent1_grand_total": 5730,
-  "batches_done": 190,
-  "dropped_rows": 22,
+  "phase2_rows": 2090,
+  "agent1_grand_total": 6090,
+  "batches_done": 230,
+  "dropped_rows": 35,
   "tracks": {
     "secure_patch": {
       "file": "secure_patch_train.jsonl",
-      "rows": 380,
+      "rows": 410,
       "families": {
-        "auth-crypto-patch": 38,
-        "concurrency-patch": 38,
-        "cpp-patch": 38,
-        "docker-k8s-patch": 38,
-        "go-patch": 38,
-        "iac-nginx-patch": 38,
-        "py-patch": 38,
-        "rust-patch": 38,
-        "sql-patch": 38,
-        "ts-patch": 38
+        "auth-crypto-patch": 41,
+        "concurrency-patch": 41,
+        "cpp-patch": 41,
+        "docker-k8s-patch": 41,
+        "go-patch": 41,
+        "iac-nginx-patch": 41,
+        "py-patch": 41,
+        "rust-patch": 41,
+        "sql-patch": 41,
+        "ts-patch": 41
       }
     },
     "systems_code": {
       "file": "systems_code_train.jsonl",
-      "rows": 270,
+      "rows": 320,
       "families": {
-        "async-systems": 27,
-        "build-ci": 27,
-        "cli-tools": 27,
-        "compiler-types": 27,
-        "data-structures": 27,
-        "db-queries": 27,
-        "networking-io": 27,
-        "parsers-protocols": 27,
-        "perf-tuning": 27,
-        "testing-harnesses": 27
+        "async-systems": 32,
+        "build-ci": 32,
+        "cli-tools": 32,
+        "compiler-types": 32,
+        "data-structures": 32,
+        "db-queries": 32,
+        "networking-io": 32,
+        "parsers-protocols": 32,
+        "perf-tuning": 32,
+        "testing-harnesses": 32
       }
     },
     "multiturn": {
       "file": "multiturn_train.jsonl",
-      "rows": 210,
+      "rows": 220,
       "families": {
-        "mt-api-design": 21,
-        "mt-arch-hardening": 21,
-        "mt-code-debug": 21,
-        "mt-config-rollout": 21,
-        "mt-ctf-concept": 21,
-        "mt-ir-containment": 21,
-        "mt-log-followup": 21,
-        "mt-patch-refine": 21,
-        "mt-perf-rootcause": 21,
-        "mt-test-fix": 21
+        "mt-api-design": 22,
+        "mt-arch-hardening": 22,
+        "mt-code-debug": 22,
+        "mt-config-rollout": 22,
+        "mt-ctf-concept": 22,
+        "mt-ir-containment": 22,
+        "mt-log-followup": 22,
+        "mt-patch-refine": 22,
+        "mt-perf-rootcause": 22,
+        "mt-test-fix": 22
       }
     },
     "agentic": {
       "file": "agentic_structured_train.jsonl",
-      "rows": 190,
+      "rows": 220,
       "families": {
-        "cli-pipeline-json": 38,
-        "diff-patch-gen": 38,
-        "json-schema-out": 38,
-        "tool-call-plan": 38,
-        "tool-result-triage": 38
+        "cli-pipeline-json": 44,
+        "diff-patch-gen": 44,
+        "json-schema-out": 44,
+        "tool-call-plan": 44,
+        "tool-result-triage": 44
       }
     },
     "persona_boundary": {
       "file": "persona_boundary_train.jsonl",
-      "rows": 60,
+      "rows": 120,
       "families": {
-        "allow-defensive-admin": 6,
-        "allow-dualuse-dev": 6,
-        "allow-local-lab": 6,
-        "chat-identity": 6,
-        "chat-lore": 6,
-        "chat-oneliner": 6,
-        "chat-workflow": 6,
+        "allow-defensive-admin": 12,
+        "allow-dualuse-dev": 12,
+        "allow-local-lab": 12,
+        "chat-identity": 18,
+        "chat-lore": 18,
+        "chat-oneliner": 12,
+        "chat-workflow": 18,
         "refusal-creds-pii": 6,
         "refusal-live-target": 6,
         "refusal-malware": 6
@@ -84,57 +84,57 @@
     },
     "dpo": {
       "file": "dpo_code_hygiene.jsonl",
-      "rows": 90,
+      "rows": 130,
       "families": {
-        "reject-broken-json": 18,
-        "reject-fluff-lecture": 18,
-        "reject-leet-in-code": 36,
-        "reject-stock-english": 18
+        "reject-broken-json": 26,
+        "reject-fluff-lecture": 26,
+        "reject-leet-in-code": 52,
+        "reject-stock-english": 26
       }
     },
     "val": {
       "file": "val.jsonl",
-      "rows": 120,
+      "rows": 180,
       "families": {
-        "val-agentic": 12,
-        "val-blue": 24,
-        "val-boundary": 12,
-        "val-code": 12,
-        "val-multiturn": 12,
-        "val-patch": 24,
-        "val-red": 24
+        "val-agentic": 18,
+        "val-blue": 36,
+        "val-boundary": 18,
+        "val-code": 18,
+        "val-multiturn": 18,
+        "val-patch": 36,
+        "val-red": 36
       }
     },
     "purple": {
       "file": "purple_arch_train.jsonl",
-      "rows": 120,
+      "rows": 150,
       "families": {
-        "purple-ai-infra": 12,
-        "purple-api": 12,
-        "purple-auth": 12,
-        "purple-cicd": 12,
-        "purple-cloud": 12,
-        "purple-containers": 12,
-        "purple-crypto": 12,
-        "purple-data": 12,
-        "purple-network": 12,
-        "purple-saas": 12
+        "purple-ai-infra": 15,
+        "purple-api": 15,
+        "purple-auth": 15,
+        "purple-cicd": 15,
+        "purple-cloud": 15,
+        "purple-containers": 15,
+        "purple-crypto": 15,
+        "purple-data": 15,
+        "purple-network": 15,
+        "purple-saas": 15
       }
     },
     "dfir_code": {
       "file": "log_forensics_code_train.jsonl",
-      "rows": 110,
+      "rows": 120,
       "families": {
-        "auth-anomaly-agg": 11,
-        "awk-net-triage": 11,
-        "binary-header-parser": 11,
-        "cloudtrail-analyzer": 11,
-        "container-audit-script": 11,
-        "dns-entropy-script": 11,
-        "jq-audit-pipe": 11,
-        "py-log-parser": 11,
-        "sql-hunt-query": 11,
-        "timeline-correlator": 11
+        "auth-anomaly-agg": 12,
+        "awk-net-triage": 12,
+        "binary-header-parser": 12,
+        "cloudtrail-analyzer": 12,
+        "container-audit-script": 12,
+        "dns-entropy-script": 12,
+        "jq-audit-pipe": 12,
+        "py-log-parser": 12,
+        "sql-hunt-query": 12,
+        "timeline-correlator": 12
       }
     },
     "pr_review": {
@@ -155,21 +155,21 @@
     },
     "sec_tests": {
       "file": "test_generation_train.jsonl",
-      "rows": 60,
+      "rows": 100,
       "families": {
-        "auth-rbac-test": 6,
-        "concurrency-stress-test": 6,
-        "go-table-test": 6,
-        "idempotency-test": 6,
-        "parser-roundtrip-test": 6,
-        "pytest-boundary": 6,
-        "rust-unit-prop": 6,
-        "sql-invariant-test": 6,
-        "timeout-retry-test": 6,
-        "ts-vitest-suite": 6
+        "auth-rbac-test": 10,
+        "concurrency-stress-test": 10,
+        "go-table-test": 10,
+        "idempotency-test": 10,
+        "parser-roundtrip-test": 10,
+        "pytest-boundary": 10,
+        "rust-unit-prop": 10,
+        "sql-invariant-test": 10,
+        "timeout-retry-test": 10,
+        "ts-vitest-suite": 10
       }
     }
   },
   "last_drop_reasons": [],
-  "updated_at": "2026-11-22T12:57:30.995905+00:00"
+  "updated_at": "2026-11-22T13:23:41.794169+00:00"
 }

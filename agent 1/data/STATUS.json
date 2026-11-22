@@ -1,0 +1,36 @@
+{
+  "red_rows": 150,
+  "blue_rows": 180,
+  "total_rows": 330,
+  "batches_done": 33,
+  "red_batches": 15,
+  "blue_batches": 18,
+  "dropped_rows": 0,
+  "red_families": {
+    "ctf-crypto": 10,
+    "ctf-forensics": 20,
+    "ctf-osint": 20,
+    "ctf-pwn": 10,
+    "ctf-reversing": 20,
+    "ctf-web": 10,
+    "exploit-concepts": 14,
+    "lab-privesc": 16,
+    "password-theory": 15,
+    "recon-concepts": 15
+  },
+  "blue_families": {
+    "alert-investigation": 20,
+    "detection-rules": 20,
+    "hardening": 15,
+    "identity-attacks": 14,
+    "incident-response": 20,
+    "log-triage": 20,
+    "malware-triage": 16,
+    "network-traffic": 15,
+    "phishing-analysis": 20,
+    "threat-hunting": 20
+  },
+  "last_error": null,
+  "updated_at": "2026-11-22T05:32:28.696746+00:00",
+  "last_drop_reasons": []
+}

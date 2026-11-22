@@ -2,68 +2,68 @@
   "agent": "agent 1 (phase 2)",
   "generator": "gemini-4-carbon",
   "phase1_rows": 4000,
-  "phase2_rows": 1250,
-  "agent1_grand_total": 5250,
-  "batches_done": 138,
-  "dropped_rows": 15,
+  "phase2_rows": 1730,
+  "agent1_grand_total": 5730,
+  "batches_done": 190,
+  "dropped_rows": 22,
   "tracks": {
     "secure_patch": {
       "file": "secure_patch_train.jsonl",
-      "rows": 260,
+      "rows": 380,
       "families": {
-        "auth-crypto-patch": 26,
-        "concurrency-patch": 26,
-        "cpp-patch": 26,
-        "docker-k8s-patch": 26,
-        "go-patch": 26,
-        "iac-nginx-patch": 26,
-        "py-patch": 26,
-        "rust-patch": 26,
-        "sql-patch": 26,
-        "ts-patch": 26
+        "auth-crypto-patch": 38,
+        "concurrency-patch": 38,
+        "cpp-patch": 38,
+        "docker-k8s-patch": 38,
+        "go-patch": 38,
+        "iac-nginx-patch": 38,
+        "py-patch": 38,
+        "rust-patch": 38,
+        "sql-patch": 38,
+        "ts-patch": 38
       }
     },
     "systems_code": {
       "file": "systems_code_train.jsonl",
-      "rows": 200,
+      "rows": 270,
       "families": {
-        "async-systems": 20,
-        "build-ci": 20,
-        "cli-tools": 20,
-        "compiler-types": 20,
-        "data-structures": 20,
-        "db-queries": 20,
-        "networking-io": 20,
-        "parsers-protocols": 20,
-        "perf-tuning": 20,
-        "testing-harnesses": 20
+        "async-systems": 27,
+        "build-ci": 27,
+        "cli-tools": 27,
+        "compiler-types": 27,
+        "data-structures": 27,
+        "db-queries": 27,
+        "networking-io": 27,
+        "parsers-protocols": 27,
+        "perf-tuning": 27,
+        "testing-harnesses": 27
       }
     },
     "multiturn": {
       "file": "multiturn_train.jsonl",
-      "rows": 160,
+      "rows": 210,
       "families": {
-        "mt-api-design": 16,
-        "mt-arch-hardening": 16,
-        "mt-code-debug": 16,
-        "mt-config-rollout": 16,
-        "mt-ctf-concept": 16,
-        "mt-ir-containment": 16,
-        "mt-log-followup": 16,
-        "mt-patch-refine": 16,
-        "mt-perf-rootcause": 16,
-        "mt-test-fix": 16
+        "mt-api-design": 21,
+        "mt-arch-hardening": 21,
+        "mt-code-debug": 21,
+        "mt-config-rollout": 21,
+        "mt-ctf-concept": 21,
+        "mt-ir-containment": 21,
+        "mt-log-followup": 21,
+        "mt-patch-refine": 21,
+        "mt-perf-rootcause": 21,
+        "mt-test-fix": 21
       }
     },
     "agentic": {
       "file": "agentic_structured_train.jsonl",
-      "rows": 130,
+      "rows": 190,
       "families": {
-        "cli-pipeline-json": 26,
-        "diff-patch-gen": 26,
-        "json-schema-out": 26,
-        "tool-call-plan": 26,
-        "tool-result-triage": 26
+        "cli-pipeline-json": 38,
+        "diff-patch-gen": 38,
+        "json-schema-out": 38,
+        "tool-call-plan": 38,
+        "tool-result-triage": 38
       }
     },
     "persona_boundary": {
@@ -107,69 +107,69 @@
     },
     "purple": {
       "file": "purple_arch_train.jsonl",
-      "rows": 60,
+      "rows": 120,
       "families": {
-        "purple-ai-infra": 6,
-        "purple-api": 6,
-        "purple-auth": 6,
-        "purple-cicd": 6,
-        "purple-cloud": 6,
-        "purple-containers": 6,
-        "purple-crypto": 6,
-        "purple-data": 6,
-        "purple-network": 6,
-        "purple-saas": 6
+        "purple-ai-infra": 12,
+        "purple-api": 12,
+        "purple-auth": 12,
+        "purple-cicd": 12,
+        "purple-cloud": 12,
+        "purple-containers": 12,
+        "purple-crypto": 12,
+        "purple-data": 12,
+        "purple-network": 12,
+        "purple-saas": 12
       }
     },
     "dfir_code": {
       "file": "log_forensics_code_train.jsonl",
-      "rows": 60,
+      "rows": 110,
       "families": {
-        "auth-anomaly-agg": 6,
-        "awk-net-triage": 6,
-        "binary-header-parser": 6,
-        "cloudtrail-analyzer": 6,
-        "container-audit-script": 6,
-        "dns-entropy-script": 6,
-        "jq-audit-pipe": 6,
-        "py-log-parser": 6,
-        "sql-hunt-query": 6,
-        "timeline-correlator": 6
+        "auth-anomaly-agg": 11,
+        "awk-net-triage": 11,
+        "binary-header-parser": 11,
+        "cloudtrail-analyzer": 11,
+        "container-audit-script": 11,
+        "dns-entropy-script": 11,
+        "jq-audit-pipe": 11,
+        "py-log-parser": 11,
+        "sql-hunt-query": 11,
+        "timeline-correlator": 11
       }
     },
     "pr_review": {
       "file": "code_review_pr_train.jsonl",
-      "rows": 60,
+      "rows": 120,
       "families": {
-        "pr-api-compat": 6,
-        "pr-auth-flaw": 6,
-        "pr-clean-approve": 6,
-        "pr-config-drift": 6,
-        "pr-crypto-misuse": 6,
-        "pr-error-swallow": 6,
-        "pr-race-condition": 6,
-        "pr-resource-leak": 6,
-        "pr-sql-perf": 6,
-        "pr-type-edgecase": 6
+        "pr-api-compat": 12,
+        "pr-auth-flaw": 12,
+        "pr-clean-approve": 12,
+        "pr-config-drift": 12,
+        "pr-crypto-misuse": 12,
+        "pr-error-swallow": 12,
+        "pr-race-condition": 12,
+        "pr-resource-leak": 12,
+        "pr-sql-perf": 12,
+        "pr-type-edgecase": 12
       }
     },
     "sec_tests": {
       "file": "test_generation_train.jsonl",
-      "rows": 50,
+      "rows": 60,
       "families": {
-        "auth-rbac-test": 5,
-        "concurrency-stress-test": 5,
-        "go-table-test": 5,
-        "idempotency-test": 5,
-        "parser-roundtrip-test": 5,
-        "pytest-boundary": 5,
-        "rust-unit-prop": 5,
-        "sql-invariant-test": 5,
-        "timeout-retry-test": 5,
-        "ts-vitest-suite": 5
+        "auth-rbac-test": 6,
+        "concurrency-stress-test": 6,
+        "go-table-test": 6,
+        "idempotency-test": 6,
+        "parser-roundtrip-test": 6,
+        "pytest-boundary": 6,
+        "rust-unit-prop": 6,
+        "sql-invariant-test": 6,
+        "timeout-retry-test": 6,
+        "ts-vitest-suite": 6
       }
     }
   },
   "last_drop_reasons": [],
-  "updated_at": "2026-11-22T12:30:43.827449+00:00"
+  "updated_at": "2026-11-22T12:57:30.995905+00:00"
 }

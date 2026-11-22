@@ -1,0 +1,69 @@
+{
+  "agent": "agents 2",
+  "generator": "gemini-4-carbon",
+  "updated_at": "2026-11-22T12:43:14.022198+00:00",
+  "total_extra_rows": 10000,
+  "tracks": {
+    "code": {
+      "rows": 3500,
+      "families": {
+        "ast-audit": 350,
+        "bash-ops": 350,
+        "config-hardening": 350,
+        "crypto-math": 350,
+        "go-sec": 350,
+        "log-parser": 350,
+        "python-sec": 350,
+        "rust-sec": 350,
+        "sql-sec": 350,
+        "ts-sec": 350
+      }
+    },
+    "multiturn": {
+      "rows": 2500,
+      "families": {
+        "ctf-drilldown": 500,
+        "debug-followup": 500,
+        "hardening-rollout": 500,
+        "ir-escalation": 500,
+        "patch-iteration": 500
+      }
+    },
+    "refusal": {
+      "rows": 900,
+      "families": {
+        "cred-harvest": 180,
+        "destructive-ops": 180,
+        "doxxing-pii": 180,
+        "live-target": 180,
+        "malware-req": 180
+      }
+    },
+    "dev": {
+      "rows": 2500,
+      "families": {
+        "algorithms": 500,
+        "debugging": 500,
+        "docker-ci": 500,
+        "linux-sysadmin": 500,
+        "sql-perf": 500
+      }
+    },
+    "val": {
+      "rows": 600,
+      "families": {
+        "val-blue": 120,
+        "val-code": 120,
+        "val-dev": 60,
+        "val-multiturn": 120,
+        "val-red": 120,
+        "val-refusal": 60
+      }
+    }
+  },
+  "last_batch": {
+    "track": "dev",
+    "accepted": 10,
+    "dropped": []
+  }
+}

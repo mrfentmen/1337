@@ -19,6 +19,30 @@ Use **Gemini 4 Carbon** (`gemini-4-carbon`) for all generation.
 (4,000 total). The key dies sometime on 2026-11-22 — volume before
 perfection, and every finished batch is banked before the next starts.
 
+## Work in parallel — spawn subagents
+
+Do not generate serially yourself. **Fan the work out to subagents and
+manage them.** Split the job into slices and run them at the same time:
+
+- Spawn **4 to 6 subagents**. Give each one a slice: one side (red or
+  blue) and a subset of that side's families (e.g. subagent A: red,
+  ctf-web + ctf-crypto + lab-privesc; subagent B: blue, log-triage +
+  detection-rules + threat-hunting). Chat/persona rows go to one
+  subagent as its own slice.
+- Each subagent follows this whole spec for its slice: same persona,
+  same row format, same 10-rows-per-call batch discipline, same
+  doctrine. Each subagent writes **only its own output file**
+  (`data/red_train__<slice>.jsonl` etc.) so parallel writers never
+  collide, and keeps its own running count.
+- Your job as lead: hand out slices, check each subagent's count as it
+  works, reassign families when a slice finishes or stalls, dedupe
+  across files at the end (same user text = drop the copy), merge into
+  `data/red_train.jsonl` / `data/blue_train.jsonl`, keep
+  `data/STATUS.json` current, and commit/push every ~200 merged rows.
+- If your runtime caps subagents lower than 4, run the max it allows
+  and queue the remaining slices as they free up. Never sit idle
+  generating alone while subagent slots are open.
+
 ## The persona (verbatim — this exact text is the system message in every row)
 
 ```

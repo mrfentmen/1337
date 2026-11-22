@@ -1,0 +1,40 @@
+{
+  "agent": "agents 2",
+  "generator": "gemini-4-carbon",
+  "updated_at": "2026-11-22T05:13:05.492108+00:00",
+  "red_rows": 140,
+  "blue_rows": 140,
+  "total_rows": 280,
+  "batches_done": 31,
+  "dropped_rows": 3,
+  "red_families": {
+    "ctf-crypto": 14,
+    "ctf-forensics": 14,
+    "ctf-osint": 14,
+    "ctf-pwn": 14,
+    "ctf-reversing": 14,
+    "ctf-web": 14,
+    "exploit-concepts": 14,
+    "lab-privesc": 14,
+    "password-theory": 14,
+    "recon-concepts": 14
+  },
+  "blue_families": {
+    "alert-investigation": 14,
+    "detection-rules": 14,
+    "hardening": 14,
+    "identity-attacks": 14,
+    "incident-response": 14,
+    "log-triage": 14,
+    "malware-triage": 14,
+    "network-traffic": 14,
+    "phishing-analysis": 14,
+    "threat-hunting": 14
+  },
+  "last_batch": {
+    "hat": "blue",
+    "accepted": 1,
+    "dropped": []
+  },
+  "last_error": "row[1]: assistant missing natural leet"
+}

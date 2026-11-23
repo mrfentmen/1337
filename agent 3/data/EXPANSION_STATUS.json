@@ -1,0 +1,443 @@
+{
+  "agent": "agent 3 (phase 2+3 multi-dataset suite)",
+  "generator": "gemini-4-carbon",
+  "updated_at": "2026-11-22T17:36:03.839909+00:00",
+  "expansion_total_rows": 9217,
+  "batches_done": 944,
+  "dropped_rows": 98,
+  "tracks": {
+    "multiturn": {
+      "file": "multiturn_train.jsonl",
+      "rows": 807,
+      "breakdown": {
+        "mt-alert-investigation": 41,
+        "mt-ctf-crypto": 41,
+        "mt-ctf-forensics": 41,
+        "mt-ctf-osint": 40,
+        "mt-ctf-pwn": 41,
+        "mt-ctf-reversing": 41,
+        "mt-ctf-web": 40,
+        "mt-detection-rules": 41,
+        "mt-exploit-concepts": 39,
+        "mt-hardening": 40,
+        "mt-identity-attacks": 40,
+        "mt-incident-response": 41,
+        "mt-lab-privesc": 40,
+        "mt-log-triage": 41,
+        "mt-malware-triage": 40,
+        "mt-network-traffic": 40,
+        "mt-password-theory": 40,
+        "mt-phishing-analysis": 40,
+        "mt-recon-concepts": 39,
+        "mt-threat-hunting": 41
+      }
+    },
+    "coding": {
+      "file": "coding_train.jsonl",
+      "rows": 600,
+      "breakdown": {
+        "chat-history-concepts": 60,
+        "chat-tooling": 60,
+        "code-backend": 60,
+        "code-cli-automation": 60,
+        "code-data-formats": 60,
+        "code-debugging": 60,
+        "code-devops": 60,
+        "code-refactoring": 60,
+        "code-systems": 60,
+        "code-testing": 60
+      }
+    },
+    "agentic": {
+      "file": "agentic_train.jsonl",
+      "rows": 500,
+      "breakdown": {
+        "agent-ci-repair": 50,
+        "agent-config-harden": 50,
+        "agent-crypto-audit": 50,
+        "agent-ctf-solve": 50,
+        "agent-dep-upgrade": 50,
+        "agent-error-recovery": 50,
+        "agent-log-hunt": 50,
+        "agent-rule-author": 50,
+        "agent-test-fix": 50,
+        "agent-vuln-patch": 50
+      }
+    },
+    "purple": {
+      "file": "purple_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "purple-ai-agents": 40,
+        "purple-api": 40,
+        "purple-auth": 40,
+        "purple-ci-supplychain": 40,
+        "purple-cloud": 40,
+        "purple-containers": 40,
+        "purple-crypto": 40,
+        "purple-database": 40,
+        "purple-linux": 40,
+        "purple-network": 40
+      }
+    },
+    "boundary": {
+      "file": "boundary_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "allow-tricky-benign": 40,
+        "refuse-creds-dox": 40,
+        "refuse-live-evasion": 40,
+        "refuse-live-target": 40,
+        "refuse-malware-ransomware": 40
+      }
+    },
+    "val": {
+      "file": "val.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "agent-ci-repair": 2,
+        "agent-config-harden": 2,
+        "agent-crypto-audit": 2,
+        "agent-ctf-solve": 2,
+        "agent-dep-upgrade": 2,
+        "agent-error-recovery": 2,
+        "agent-log-hunt": 2,
+        "agent-rule-author": 2,
+        "agent-test-fix": 2,
+        "agent-vuln-patch": 2,
+        "alert-investigation": 10,
+        "arch-ai-rag-pipeline": 1,
+        "arch-cloud-multitenant": 1,
+        "arch-data-encryption": 1,
+        "arch-microservices": 2,
+        "arch-zero-trust-pki": 1,
+        "chat-history-concepts": 4,
+        "chat-tooling": 4,
+        "code-backend": 4,
+        "code-cli-automation": 4,
+        "code-data-formats": 4,
+        "code-debugging": 4,
+        "code-devops": 4,
+        "code-refactoring": 4,
+        "code-systems": 4,
+        "code-testing": 4,
+        "ctf-crypto": 10,
+        "ctf-forensics": 10,
+        "ctf-osint": 10,
+        "ctf-pwn": 10,
+        "ctf-reversing": 10,
+        "ctf-web": 10,
+        "dec-arm64-to-c": 1,
+        "dec-bytecode-py-jvm": 1,
+        "dec-ghidra-structs": 1,
+        "dec-wasm-evm": 1,
+        "dec-x86-to-c": 2,
+        "detection-rules": 10,
+        "exploit-concepts": 10,
+        "fim-c-bounds": 2,
+        "fim-crypto-aead": 2,
+        "fim-detection-sigma": 2,
+        "fim-go-services": 3,
+        "fim-python-parsers": 3,
+        "fim-rust-systems": 3,
+        "fim-sql-rls": 2,
+        "fim-ts-middleware": 3,
+        "hardening": 10,
+        "identity-attacks": 10,
+        "incident-response": 10,
+        "lab-privesc": 10,
+        "log-triage": 10,
+        "malware-triage": 10,
+        "mod-c-to-modern-cpp": 1,
+        "mod-c-to-rust": 1,
+        "mod-crypto-upgrade": 1,
+        "mod-iptables-to-nft": 1,
+        "mod-js-to-strict-ts": 1,
+        "mod-legacy-py-to-312": 1,
+        "mod-raw-sql-to-safe": 1,
+        "mod-shell-to-go": 1,
+        "mt-alert-investigation": 2,
+        "mt-ctf-crypto": 2,
+        "mt-ctf-forensics": 2,
+        "mt-ctf-osint": 2,
+        "mt-ctf-pwn": 2,
+        "mt-ctf-reversing": 2,
+        "mt-ctf-web": 2,
+        "mt-detection-rules": 2,
+        "mt-exploit-concepts": 2,
+        "mt-hardening": 2,
+        "mt-identity-attacks": 2,
+        "mt-incident-response": 2,
+        "mt-lab-privesc": 2,
+        "mt-log-triage": 2,
+        "mt-malware-triage": 2,
+        "mt-network-traffic": 2,
+        "mt-password-theory": 2,
+        "mt-phishing-analysis": 2,
+        "mt-recon-concepts": 2,
+        "mt-threat-hunting": 2,
+        "network-traffic": 10,
+        "password-theory": 10,
+        "phishing-analysis": 10,
+        "pr-approve-clean": 3,
+        "pr-auth-bypass": 3,
+        "pr-crypto-misuse": 2,
+        "pr-infra-iac": 2,
+        "pr-memory-bounds": 3,
+        "pr-perf-dos": 2,
+        "pr-race-concurrency": 3,
+        "pr-sql-data-leak": 2,
+        "purple-ai-agents": 4,
+        "purple-api": 4,
+        "purple-auth": 4,
+        "purple-ci-supplychain": 4,
+        "purple-cloud": 4,
+        "purple-containers": 4,
+        "purple-crypto": 4,
+        "purple-database": 4,
+        "purple-linux": 4,
+        "purple-network": 4,
+        "recon-concepts": 10,
+        "threat-hunting": 10
+      }
+    },
+    "dpo": {
+      "file": "dpo_pairs.jsonl",
+      "rows": 510,
+      "breakdown": {
+        "fluff-and-lectures": 102,
+        "incomplete-fix": 102,
+        "leet-in-code": 102,
+        "plain-english-drift": 102,
+        "unreadable-overleet": 102
+      }
+    },
+    "fim": {
+      "file": "fim_completion_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "fim-c-bounds": 50,
+        "fim-crypto-aead": 50,
+        "fim-detection-sigma": 50,
+        "fim-go-services": 50,
+        "fim-python-parsers": 50,
+        "fim-rust-systems": 50,
+        "fim-sql-rls": 50,
+        "fim-ts-middleware": 50
+      }
+    },
+    "pr_review": {
+      "file": "pr_review_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "pr-approve-clean": 50,
+        "pr-auth-bypass": 50,
+        "pr-crypto-misuse": 50,
+        "pr-infra-iac": 50,
+        "pr-memory-bounds": 50,
+        "pr-perf-dos": 50,
+        "pr-race-concurrency": 50,
+        "pr-sql-data-leak": 50
+      }
+    },
+    "structured": {
+      "file": "structured_json_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "struct-incident-report": 40,
+        "struct-log-normalized": 40,
+        "struct-sarif-finding": 40,
+        "struct-sbom-vex": 40,
+        "struct-threat-model": 40
+      }
+    },
+    "log2rule": {
+      "file": "log_to_rule_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "l2r-auditd-linux": 40,
+        "l2r-cloudtrail-iam": 40,
+        "l2r-semgrep-ast": 40,
+        "l2r-sigma-windows": 40,
+        "l2r-zeek-suricata": 40
+      }
+    },
+    "decompile": {
+      "file": "decompile_to_source_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "dec-arm64-to-c": 40,
+        "dec-bytecode-py-jvm": 40,
+        "dec-ghidra-structs": 40,
+        "dec-wasm-evm": 40,
+        "dec-x86-to-c": 40
+      }
+    },
+    "arch": {
+      "file": "architecture_threatmodel_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "arch-ai-rag-pipeline": 80,
+        "arch-cloud-multitenant": 80,
+        "arch-data-encryption": 80,
+        "arch-microservices": 80,
+        "arch-zero-trust-pki": 80
+      }
+    },
+    "oneliners": {
+      "file": "terminal_oneliners_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "1l-git-awk-sed": 40,
+        "1l-jq-json": 40,
+        "1l-linux-proc-ss": 40,
+        "1l-openssl-certs": 40,
+        "1l-tshark-pcap": 40
+      }
+    },
+    "modernize": {
+      "file": "translate_modernize_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "mod-c-to-modern-cpp": 50,
+        "mod-c-to-rust": 50,
+        "mod-crypto-upgrade": 50,
+        "mod-iptables-to-nft": 50,
+        "mod-js-to-strict-ts": 50,
+        "mod-legacy-py-to-312": 50,
+        "mod-raw-sql-to-safe": 50,
+        "mod-shell-to-go": 50
+      }
+    },
+    "postmortem": {
+      "file": "rootcause_postmortem_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "pm-auth-cascade": 50,
+        "pm-cache-poison-leak": 50,
+        "pm-ci-artifact-drift": 50,
+        "pm-clock-skew-replay": 50,
+        "pm-db-isolation-bug": 50,
+        "pm-k8s-netpol-gap": 50,
+        "pm-memory-oob-crash": 50,
+        "pm-tls-mtls-outage": 50
+      }
+    },
+    "skeptical": {
+      "file": "skeptical_verify_train.jsonl",
+      "rows": 300,
+      "breakdown": {
+        "skep-crypto-myth": 60,
+        "skep-db-auth-myth": 60,
+        "skep-memory-lang-myth": 60,
+        "skep-network-tls-myth": 60,
+        "skep-web-header-myth": 60
+      }
+    },
+    "long_repo": {
+      "file": "long_context_repo_train.jsonl",
+      "rows": 300,
+      "breakdown": {
+        "repo-go-microservice": 60,
+        "repo-k8s-terraform": 60,
+        "repo-py-fastapi-ai": 60,
+        "repo-rust-daemon": 60,
+        "repo-ts-fullstack": 60
+      }
+    },
+    "repl": {
+      "file": "repl_sessions_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "repl-gdb-pwndbg": 80,
+        "repl-lldb-mach": 80,
+        "repl-openssl-net": 80,
+        "repl-psql-sqlite": 80,
+        "repl-python-interactive": 80
+      }
+    },
+    "fuzz_test": {
+      "file": "fuzz_and_test_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "fuzz-libfuzzer-cpp": 80,
+        "fuzz-python-hypothesis": 80,
+        "fuzz-rust-proptest": 80,
+        "fuzz-solidity-invariant": 80,
+        "fuzz-ts-fastcheck": 80
+      }
+    },
+    "spec2parser": {
+      "file": "spec_to_parser_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "spec-binary-framing": 40,
+        "spec-crypto-token": 40,
+        "spec-log-wireformat": 40,
+        "spec-network-header": 40,
+        "spec-varint-tlv": 40
+      }
+    },
+    "mental_trace": {
+      "file": "mental_trace_train.jsonl",
+      "rows": 300,
+      "breakdown": {
+        "trace-c-promotions": 60,
+        "trace-crypto-sidechannel": 60,
+        "trace-js-py-quirks": 60,
+        "trace-rust-lifetimes-bits": 60,
+        "trace-sql-three-valued": 60
+      }
+    },
+    "transpile_rule": {
+      "file": "rule_transpiler_train.jsonl",
+      "rows": 300,
+      "breakdown": {
+        "xrule-iam-to-rego": 60,
+        "xrule-kql-to-jq": 60,
+        "xrule-sigma-to-sql": 60,
+        "xrule-spl-to-sigma": 60,
+        "xrule-zeek-to-suricata": 60
+      }
+    },
+    "safe_harden": {
+      "file": "safe_hardening_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "shrd-firewall-ipv6-dns": 40,
+        "shrd-k8s-containers": 40,
+        "shrd-systemd-linux": 40,
+        "shrd-tls-ssh-crypto": 40,
+        "shrd-web-cookies-csp": 40
+      }
+    },
+    "mcp_tools": {
+      "file": "toolsmith_mcp_train.jsonl",
+      "rows": 200,
+      "breakdown": {
+        "mcp-crypto-verifier": 40,
+        "mcp-log-inspector": 40,
+        "mcp-pcap-analyzer": 40,
+        "mcp-sbom-auditor": 40,
+        "mcp-static-scanner": 40
+      }
+    },
+    "reasoning_cot": {
+      "file": "reasoning_cot_train.jsonl",
+      "rows": 400,
+      "breakdown": {
+        "cot-binary-offsets": 80,
+        "cot-concurrency-order": 80,
+        "cot-crypto-numbertheory": 80,
+        "cot-distributed-quorum": 80,
+        "cot-z3-bitvectors": 80
+      }
+    }
+  },
+  "last_batch": {
+    "track": "spec2parser",
+    "accepted": 10,
+    "dropped": []
+  },
+  "last_error": "row[8]: turn[1] short or missing natural leet"
+}
